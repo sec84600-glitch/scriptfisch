@@ -21,10 +21,9 @@ jobs:
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
 
-    - name: Build Webview APK with PWABuilder / Bubblewrap alternative or Python
+    - name: Build Webview APK
       run: |
         echo "Menyiapkan perakitan APK Masterpiece Optimizer..."
-        # Di sini server akan memproses index.html dan rangga_locked menjadi APK mandiri
         mkdir -p output_apk
         echo "Rangga Winata - Masterpiece Optimizer v31.0.0" > output_apk/info.txt
 
